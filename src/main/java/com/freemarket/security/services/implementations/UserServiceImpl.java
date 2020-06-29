@@ -20,7 +20,10 @@ public class UserServiceImpl implements UsuarioService {
     public Usuario findByUserName(String username) {
         return usuarioDao.findByUsername(username);
     }
+
+    @Override
+    public Usuario save(Usuario usuario) {
+        return usuarioDao.save(usuario);
+    }
     
-
-
 }
